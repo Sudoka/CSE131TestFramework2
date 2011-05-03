@@ -1,0 +1,4 @@
+int x = 5;
+function : void main() {
+  int y = x;
+}
