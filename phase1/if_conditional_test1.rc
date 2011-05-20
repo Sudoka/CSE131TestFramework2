@@ -20,7 +20,7 @@ function : void main()
 				if (dream4 > dream5)
 				{
 					cout << "Fourth level of Inception" << endl;
-					if (dream5 < dream6)
+					if (dream5 > dream6)
 					{
 						cout << "Fifth level of Inception" << endl;
 						if (winning)
