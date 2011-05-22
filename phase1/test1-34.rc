@@ -1,0 +1,44 @@
+//post-increment, post-decrement, pre-increment, post-increment
+
+function: void main() {
+	
+	int i = 15;
+	float f = 3.5;
+	float f2;
+	int i2;
+	
+	cout << i << " " << f << endl; // 15 3.5
+
+	f = f++;
+	i = i++;
+
+	cout << i << " " << f << endl; // 15 3.5 (no change)
+	
+	f2 = f++;
+	i2 = i++;
+	
+	cout << i << " " << f << endl; // 16 4.5
+	cout << i2 << " " << f2 << endl << endl; // 15 3.5
+
+	f = f--;
+	i = i--;
+
+	cout << i << " " << f << endl; // 16 4.5 (no change)
+	
+	f2 = f--;
+	i2 = i--;
+	
+	cout << i << " " << f << endl; // 15 3.5
+	cout << i2 << " " << f2 << endl << endl; // 16 4.5
+
+	f = --f;
+	i = --i;
+	
+	cout << i << " " << f << endl << endl; // 14 2.5
+	
+	f = ++f;
+	i = ++i;
+	
+	cout << i << " " << f << endl; //15 3.5
+	
+}
