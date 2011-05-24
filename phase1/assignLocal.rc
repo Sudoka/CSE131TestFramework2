@@ -1,7 +1,7 @@
 int x;
 function : void main() {
     x = 4;
-    cout << x << endl;
+    cout << x << endl; //4
     int y = x = 5;
     cout << x << y << endl;
     int z = 0;
