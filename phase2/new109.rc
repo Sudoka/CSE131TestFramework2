@@ -1,0 +1,15 @@
+int x = 5 ;
+
+function: void main()
+{
+   cout << x << endl;
+   cout << (++x) + (x++) + (++x) + (++x) << endl;
+   cout << x << endl;
+   cout << (--x) - (x--) + (--x) - (--x) << endl;
+   cout << x << endl;
+   cout << (--x) + x <<endl;
+   cout << x + (--x) << endl;  // problem???
+   cout << (++x) + x << endl;
+   cout << x + (++x) << endl;  // problem???!!!!!!
+   
+}

@@ -1,0 +1,44 @@
+function : void foo1()
+{
+	if(true)
+	{
+		if(false)
+		{
+			cout << "NO!" << endl;
+		}
+		if(true)
+		{
+			cout << "YES!" << endl;
+		}
+		if(3>0)
+		{
+			cout << "YES!" << endl;
+			return;
+		}
+		if(true)
+		{
+			cout << "NO!" << endl;
+		}
+		cout << "NO!" << endl;
+	}
+	cout << "NO!" << endl;
+}
+
+function : void foo2()
+{
+	if(true)
+	{
+		if(false)
+		{
+			cout << "NO!" << endl;
+		}
+		return NULL;
+	}
+	cout << "NO!" << endl;
+}
+
+function : void main()
+{
+	foo1();
+	foo2();
+}

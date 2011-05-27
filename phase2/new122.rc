@@ -1,0 +1,23 @@
+function : void foo1()
+{
+	if(true)
+	{
+		return;
+	}
+	cout << "NO!" << endl;
+}
+
+function : void foo2()
+{
+	if(true)
+	{
+		return NULL;
+	}
+	cout << "NO!" << endl;
+}
+
+function : void main()
+{
+	foo1();
+	foo2();
+}
