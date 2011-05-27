@@ -22,3 +22,31 @@ To add to test's, create your own test file, run ./testAll.sh and email yixinzhu
 To run current tests, just download/clone the tests, run ./testAll.sh and check the diffs. Email me if the answers are wrong and you think your compiler is outputting the correct output so we can resolve the problem and upload the correct answers for everyone else.
 
 DISCLAIMER: the "answer" file MAY be wrong, so if there is an error make sure to check the ans.out, your my.out and the test.rc to make sure it really is wrong.
+
+TROUBLESHOOTING GUIDE:
+make sure all the .class and .java files are in the same directory as the framework folder itself
+(so NO src/ and bin/ folders)
+
+ie: in your project folder (mine is: compiler-construction/) should contain:
+compiler-construction/*.class //all .class files from bin/
+compiler-construction/*.java //all .java files from src
+compiler-construction/CSE131TestFramework2/ //this framework
+
+make sure the RC.sh is copied from compiler-construction/CSE131TestFramework2/RC.sh into the top level ie: compiler-construction/
+
+**** make sure input.c and output.s is under compiler-construction/ ****
+
+make sure you re-compiler with make new before cd-ing into CSE131TestFramework2 and then running ./testAll.sh if you are scp-ing from your local machine onto ieng9
+
+
+-if you have satisfied all those above try running a sample test file manually
+
+so in compiler-construction/ run these commands:
+
+make new
+RC (some test file).rc
+make compile
+a.out
+
+
+if that works and there is still a problem with the script please email me at yixinzhu91@gmail.com
