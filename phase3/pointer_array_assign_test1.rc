@@ -1,0 +1,12 @@
+int [3] x;
+function : void main()
+{
+	x[0] = 1;
+	x[1] = 2;
+	x[2] = 3;
+	int * p = x;
+	cout << *p << endl;
+	p++;
+	cout << *p << endl;
+	cout << *p++ << endl;
+}
